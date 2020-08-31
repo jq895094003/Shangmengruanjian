@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/commit_check_order_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="7.0"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/commit_check_order_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff2f6acb"
+            android:text="提交单据"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</LinearLayout>

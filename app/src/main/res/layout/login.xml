@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="150.0dp"
+        android:layout_height="0.0dp"
+        android:layout_marginTop="60.0dp"
+        android:layout_weight="1.0"
+        android:src="@mipmap/a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dp"
+        android:layout_marginBottom="25.0dp"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:text="掌店通"
+        android:textColor="#ff000000"
+        android:textSize="48.0dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="240.0dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入员工编号" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="240.0dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120.0dp"
+        android:layout_height="0.0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dp"
+        android:paddingRight="5.0dp">
+
+        <Button
+            android:id="@+id/btn_log"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_shap"
+            android:text="登录"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dp"
+        android:layout_marginBottom="30.0dp"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:text="copyright © 2015 - 2020 商蒙软件All Rights Reserved."
+        android:textColor="#ff000000" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:progressBarStyleLarge"
+        android:layout_width="50.0dp"
+        android:layout_height="50.0dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

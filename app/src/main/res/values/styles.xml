@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--    引入自定义AlertDialog主题    -->
+        <item name="android:alertDialogTheme">@style/MyDialogStyle</item>
+    </style>
+    <style name="CustomProgressDialog" parent="Theme.AppCompat.Dialog">
+        <!--此属性控制悬浮窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="MyDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--    是否悬浮于窗口之上    -->
+        <item name="android:windowIsFloating">true</item>
+        <!--    半透明    -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--    是否显示title    -->
+        <item name="android:windowNoTitle">true</item>
+        <!--    dialog之外没有焦点的区域是否罩上黑色半透明    -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16dp</item>
+        <!--    修改顶部标题背景颜色，可以是图片    -->
+        <item name="android:topDark">@color/alert_blue</item>
+        <!--    修改内容区域背景颜色    -->
+        <item name="android:layout_gravity">center</item>
+        <item name="buttonBarButtonStyle">@color/white</item>
+
+    </style>
+
+    <style name="update_progress_horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <!--进度条的进度颜色drawable文件-->
+        <item name="android:progressDrawable">@drawable/progress_horizontal_style</item>
+        <!--进度条的最小高度-->
+        <item name="android:minHeight">17dp</item>
+        <!--进度条的最大高度-->
+        <item name="android:maxHeight">17dp</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?colorAccent</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorHeight">0.0dip</item>
+        <item name="tabSelectedTextColor">#fff7554a</item>
+        <item name="tabTextColor">#ff6b7984</item>
+    </style>
+</resources>

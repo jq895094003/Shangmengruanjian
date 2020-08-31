@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="45.0dip"
+            android:src="@mipmap/account" />
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="150.0dip"
+            android:layout_height="45.0dip"
+            android:background="@null"
+            android:hint="商铺名称" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="45.0dip"
+            android:src="@mipmap/name" />
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="150.0dip"
+            android:layout_height="45.0dip"
+            android:background="@null"
+            android:hint="姓名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="45.0dip"
+            android:src="@mipmap/telephone" />
+
+        <EditText
+            android:id="@+id/register_telephone"
+            android:layout_width="150.0dip"
+            android:layout_height="45.0dip"
+            android:background="@null"
+            android:hint="手机号" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+</LinearLayout>

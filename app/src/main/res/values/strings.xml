@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">掌店通</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <array name="purchaseoperation">
+        <item>进价调整</item>
+        <item>售价调整</item>
+    </array>
+    <string-array name="purchase_list">
+        <item>条码</item>
+        <item>内码</item>
+        <item>商品名</item>
+        <item>供应商编号</item>
+        <item>供应商名</item>
+        <item>商品类型</item>
+    </string-array>
+    <string-array name="check_bottom">
+        <item>查询商品</item>
+        <item>已选目录</item>
+    </string-array>
+    <array name="return_factory_type">
+        <item>过期返货</item>
+        <item>促销返货</item>
+        <item>供应商领用</item>
+        <item>终止合作</item>
+        <item>其他原因</item>
+    </array>
+    <array name="order_goods_title">
+        <item>订货单</item>
+        <item>补货单</item>
+    </array>
+    <array name="promotion_type">
+        <item>限量促销</item>
+        <item>限时促销</item>
+        <item>会员促销</item>
+    </array>
+    <array name="card_ticket_operation">
+        <item>单卡操作</item>
+        <item>多卡操作</item>
+    </array>
+    <array name="card_ticket_type">
+        <item>磁卡</item>
+        <item>条码卡</item>
+        <item>IC卡</item>
+        <item>智能卡</item>
+        <item>射频卡</item>
+        <item>全新智能卡</item>
+        <item>M1卡</item>
+    </array>
+    <array name="card_ticket_limit">
+        <item>卡号无限制</item>
+        <item>卡号不含4</item>
+        <item>卡号不含7</item>
+        <item>卡号不含4,7</item>
+    </array>
+    <array name="eight_abnormal">
+        <item>负库存商品</item>
+        <item>负毛利商品</item>
+        <item>滞销商品</item>
+        <item>进货未销商品</item>
+        <item>临过期商品</item>
+        <item>畅缺商品</item>
+        <item>高库存商品</item>
+        <item>正常品库存为零</item>
+    </array>
+    <array name="sort_role">
+        <item>金额</item>
+        <item>毛利</item>
+        <item>毛利率</item>
+        <item>数量</item>
+    </array>
+    <array name="sort_mode">
+        <item>正数</item>
+        <item>倒数</item>
+    </array>
+    <array name="sort_type">
+        <item>单品销量排行</item>
+        <item>货类销量排行</item>
+    </array>
+</resources>

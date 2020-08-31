@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/date_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/report_date_begin"
+            android:layout_width="0.0dip"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="选择开始时间"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="2dp"
+            android:background="#000"/>
+
+        <EditText
+            android:id="@+id/report_date_stop"
+            android:layout_width="0.0dip"
+            android:gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="选择结束时间"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/report_edt"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5.0" />
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="扫码" />
+
+        <Button
+            android:id="@+id/report_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text="查询" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout">
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/shape_edit"/>
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/report_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null" />
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/single_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/singlereport" />
+
+        <ImageButton
+            android:id="@+id/type_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/productreport" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/guest_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/guestreport" />
+
+        <ImageButton
+            android:id="@+id/moneier_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/monierreport" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/shoppe_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/shoppereport" />
+
+        <ImageButton
+            android:id="@+id/real_report"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#ffffffff"
+            android:src="@mipmap/realreport" />
+    </LinearLayout>
+</LinearLayout>
