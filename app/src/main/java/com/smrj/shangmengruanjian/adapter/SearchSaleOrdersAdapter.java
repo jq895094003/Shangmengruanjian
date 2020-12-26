@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.smrj.shangmengruanjian.R;
 import com.smrj.shangmengruanjian.bean.SearchSaleOrdersBean;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -67,8 +68,11 @@ public class SearchSaleOrdersAdapter extends BaseAdapter {
         searchSaleOrderThingmoney.setText(searchSaleOrdersBeans.get(position).getDTHINGMONEY());
         searchSaleOrderPlanml.setText(searchSaleOrdersBeans.get(position).getDPLANML());
         searchSaleOrderPlansale.setText(searchSaleOrdersBeans.get(position).getDPLANSALE());
-        searchSaleOrderSalezbl.setText(searchSaleOrdersBeans.get(position).getDSALEZBL());
-        searchSaleOrderMlzbl.setText(searchSaleOrdersBeans.get(position).getDMLZBL());
+        DecimalFormat df = new DecimalFormat("##.##");
+        String dsalzbl = searchSaleOrdersBeans.get(position).getDSALEZBL().replace("%","");
+        searchSaleOrderSalezbl.setText(df.format(Double.valueOf(dsalzbl)) + "%");
+        String dmlzbl = searchSaleOrdersBeans.get(position).getDMLZBL().replace("%","");
+        searchSaleOrderMlzbl.setText(df.format(Double.valueOf(dmlzbl)) + "%");
         searchSaleOrderKindno.setText(searchSaleOrdersBeans.get(position).getDKINDNO());
         searchSaleOrderKindname.setText(searchSaleOrdersBeans.get(position).getDKINDNAME());
 

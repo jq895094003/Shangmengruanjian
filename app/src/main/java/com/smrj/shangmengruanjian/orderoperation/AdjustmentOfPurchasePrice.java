@@ -128,7 +128,7 @@ public class AdjustmentOfPurchasePrice extends AppCompatActivity implements Adap
 
             @Override
             public void faile(JSONObject jsonObject) {
-                Toast.makeText(AdjustmentOfPurchasePrice.this,"请求失败",Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdjustmentOfPurchasePrice.this,"网络异常,请稍后重试",Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -157,7 +157,7 @@ public class AdjustmentOfPurchasePrice extends AppCompatActivity implements Adap
 
             @Override
             public void faile(JSONObject jsonObject) {
-                Toast.makeText(AdjustmentOfPurchasePrice.this,"请求失败",Toast.LENGTH_SHORT).show();
+                Toast.makeText(AdjustmentOfPurchasePrice.this,"网络异常,请稍后重试",Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -157,7 +157,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void faile(JSONObject jsonObject) {
                 progressDialogUtil.dismiss(Login.this);
-                Toast.makeText(Login.this, "请求失败", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login.this, "网络异常,请稍后重试", Toast.LENGTH_SHORT).show();
             }
 
         });

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.smrj.shangmengruanjian.R;
 import com.smrj.shangmengruanjian.bean.SearchSaleKindOrdersBean;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -54,13 +55,14 @@ public class SearchSaleKindOrderAdapter extends BaseAdapter {
         searchSaleOrderKindKindname.setText(searchSaleKindOrdersBeans.get(position).getDKINDNAME());
         searchSaleOrderKindDid.setText(String.valueOf(searchSaleKindOrdersBeans.get(position).getDID()));
         searchSaleOrderKindKindno.setText(searchSaleKindOrdersBeans.get(position).getDKINDNO());
-        searchSaleOrderKindMlzbl.setText(searchSaleKindOrdersBeans.get(position).getDMLZBL());
+        DecimalFormat df = new DecimalFormat("##.##");
+        searchSaleOrderKindMlzbl.setText(df.format(Double.valueOf(searchSaleKindOrdersBeans.get(position).getDMLZBL())));
         searchSaleOrderKindPlanml.setText(String.valueOf(searchSaleKindOrdersBeans.get(position).getDPLANML()));
         searchSaleOrderKindPlansale.setText(searchSaleKindOrdersBeans.get(position).getDPLANSALE());
         searchSaleOrderKindKindnum.setText(String.valueOf(searchSaleKindOrdersBeans.get(position).getDKINDNUM()));
         searchSaleOrderKindKindml.setText(String.valueOf(searchSaleKindOrdersBeans.get(position).getDKINDML()));
         searchSaleOrderKindKindmoney.setText(String.valueOf(searchSaleKindOrdersBeans.get(position).getDKINDMONEY()));
-        searchSaleOrderKindSalezbl.setText(searchSaleKindOrdersBeans.get(position).getDSALEZBL());
+        searchSaleOrderKindSalezbl.setText(df.format(Double.valueOf(searchSaleKindOrdersBeans.get(position).getDSALEZBL())));
         return convertView;
     }
 

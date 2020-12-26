@@ -7,19 +7,23 @@ public class MyUrl {
     //邓州168便利店      http://39.96.34.144:8080/DZ168APP
     //商蒙测试           http://39.96.60.156:8080/SHANGMENGZDT
     //南阳东菇生鲜       http://39.96.34.144:8080/NYDGSXZDT
-    //盘州舒麦     http://47.104.205.74:8080/PZSMZDT
+    //盘州舒麦          http://47.104.205.74:8080/PZSMZDT
+    //郏县富轻          http://101.36.150.148:8080/JXFQZDT
+    //漯河喜盈门          http://47.93.17.175:8080/LHXYMZDT
+    //唐河黑龙镇永鲜e家    http://47.93.17.175:8080/THHLZZDT
+    //贵州遵义家家乐     http://47.93.17.175:8080/ZYJJLZDT
 
     //注册的app名字
     public static final String appName = "掌店通";
     //检测更新的名字
-    public static final String updateAppName = "盘州舒麦";
+    public static final String updateAppName = "贵州遵义家家乐";
     //后台接口访问地址
-    public static final String url = "http://47.104.205.74:8080/PZSMZDT";
+    public static final String url = "http://47.93.17.175:8080/ZYJJLZDT";
     //本地测试接口
-//    public static final String url = "http://192.168.1.88:8081/BESPHONE";
+//    public static final String url = "http://192.168.1.78:8081/shangmengapp";
     //检测更新请求地址
     public static final String updateUrl = "http://39.96.60.156:8080/APPMANAGE";
-//    public static final String updateUrl = "http://192.168.1.80:8082/APPMANAGE";
+    //    public static final String updateUrl = "http://192.168.1.80:8082/APPMANAGE";
     //下载App地址
     public static final String updateuIp = "http://39.96.60.156:8080";
 

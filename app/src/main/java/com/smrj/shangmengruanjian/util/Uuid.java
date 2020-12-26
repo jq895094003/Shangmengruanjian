@@ -31,7 +31,7 @@ public class Uuid {
         File zfcxFileDir = new File(externalDownloadsDir,TEMP_DIR);
         Toast.makeText(context,zfcxFileDir.getPath(),Toast.LENGTH_LONG);
         if (!zfcxFileDir.exists()){
-            if (!zfcxFileDir.mkdir()){
+            if (!zfcxFileDir.mkdirs()){
                 Toast.makeText(context,"文件夹创建失败: " + externalDownloadsDir.getPath(),Toast.LENGTH_SHORT).show();
             }
         }

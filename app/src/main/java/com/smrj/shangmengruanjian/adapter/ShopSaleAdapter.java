@@ -10,6 +10,7 @@ import com.smrj.shangmengruanjian.R;
 import com.smrj.shangmengruanjian.bean.SalesEntity;
 import com.smrj.shangmengruanjian.bean.ShopSaleEntity;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,7 +73,9 @@ public class ShopSaleAdapter extends BaseAdapter {
         DWATER.setText(salesEntities.get(paramInt).getDWATER());
         //整体客单
         TextView DPRICECUSTOMER = paramView.findViewById(R.id.DPRICECUSTOMER);
-        DPRICECUSTOMER.setText(salesEntities.get(paramInt).getDPRICECUSTOMER());
+
+        DecimalFormat df = new DecimalFormat("##.##");
+        DPRICECUSTOMER.setText(df.format(Double.valueOf(salesEntities.get(paramInt).getDPRICECUSTOMER())));
         //退货金额
         TextView DMONEY_TH = paramView.findViewById(R.id.DMONEY_TH);
         DMONEY_TH.setText(salesEntities.get(paramInt).getDMONEY_TH());

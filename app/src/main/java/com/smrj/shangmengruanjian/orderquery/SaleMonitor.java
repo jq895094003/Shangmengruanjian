@@ -11,9 +11,11 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -100,6 +102,13 @@ public class SaleMonitor extends AppCompatActivity implements View.OnClickListen
     @BindView(R.id.SALENUM)
     EditText SALENUM;
 
+    @BindView(R.id.payment_type)
+    Spinner paymentType;
+    @BindView(R.id.negative_gross_profit)
+    CheckBox negativeGrossProfit;
+    @BindView(R.id.negative_inventory)
+    CheckBox negativeInventory;
+
 
     private Map<String, String> goodsKinsMap = new HashMap<>();
 
@@ -155,6 +164,10 @@ public class SaleMonitor extends AppCompatActivity implements View.OnClickListen
         endEdit.setOnClickListener(this);
 
 //        detailQueryMethod();
+        String[] arrayOfString = new String[]{"全部", "微信", "支付宝", "现金", "储值卡"};
+        ArrayAdapter localArrayAdapter = new ArrayAdapter(SaleMonitor.this, android.R.layout.simple_dropdown_item_1line, arrayOfString);
+        paymentType.setAdapter(localArrayAdapter);
+
 
         findGoodsKindMethod();
 
@@ -179,7 +192,7 @@ public class SaleMonitor extends AppCompatActivity implements View.OnClickListen
                     items[i] = jsonArray.optJSONObject(i).optString("dkindname");
 
                     System.out.println("jsonArray.optJSONObject(i).optString(\"dkindname\") = " + jsonArray.optJSONObject(i).optString("dkindname"));
-                    
+
                     goodsKinsMap.put(jsonArray.optJSONObject(i).optString("dkindno"), jsonArray.optJSONObject(i).optString("dkindname"));
                 }
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(SaleMonitor.this, android.R.layout.simple_dropdown_item_1line, items);
@@ -216,6 +229,9 @@ public class SaleMonitor extends AppCompatActivity implements View.OnClickListen
         requestParams.put("dprovidername", dprovidername.getText().toString());
         requestParams.put("dinsetcode", barcode.getText().toString());
         requestParams.put("begin", startEdit.getText().toString());
+        requestParams.put("payType", paymentType.getSelectedItem().toString() + "");
+        requestParams.put("isFml", (negativeGrossProfit.isChecked() ? "1" : "0"));
+        requestParams.put("isFkc", (negativeInventory.isChecked() ? "1" : "0"));
         requestParams.put("end", endEdit.getText().toString());
         MyAsyncClient.doPost(new MyUrl().getQueryAllSale(), requestParams, new MyResponseHandler(SaleMonitor.this) {
             @Override

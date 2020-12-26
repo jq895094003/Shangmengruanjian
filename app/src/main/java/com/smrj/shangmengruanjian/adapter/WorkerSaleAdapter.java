@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.smrj.shangmengruanjian.R;
 import com.smrj.shangmengruanjian.bean.WorkerSaleEntity;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class WorkerSaleAdapter extends BaseAdapter {
@@ -71,7 +72,8 @@ public class WorkerSaleAdapter extends BaseAdapter {
         DWATER.setText(salesEntities.get(paramInt).getDNO_NO());
         //整体客单
         TextView DPRICECUSTOMER = paramView.findViewById(R.id.DPRICECUSTOMER);
-        DPRICECUSTOMER.setText(salesEntities.get(paramInt).getDPRICECUSTOMER());
+        DecimalFormat df = new DecimalFormat("##.##");
+        DPRICECUSTOMER.setText(df.format(Double.valueOf(salesEntities.get(paramInt).getDPRICECUSTOMER())));
 
 
 
